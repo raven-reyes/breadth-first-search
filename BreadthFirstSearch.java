@@ -70,7 +70,7 @@ public class BreadthFirstSearch {
 			Graph. addEdge(5, 4);
 			Graph. addEdge(5, 3);
 
-			System.out.println("BFS starting from vertex 2 is : " );
+			System.out.println("BFS starting from vertex 4 is : " );
 			Graph.BFS(4);
 		}
 	}	
