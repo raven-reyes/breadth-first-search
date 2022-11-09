@@ -41,14 +41,20 @@ public class BreadthFirstSearch {
 
 			// Get all adjacent vertices of the dequeued vertex s/head vertex/ front vertex 
 		    // If a adjacent vertex has not been visited, then mark it  visited and enqueue it
-		Iterator<Integer> i = adj[s].listIterator();
-		while (i.hasNext()){
-		int n = i.next();
-		if (!visited[n]){
-		visited[n] = true;
-		queue.add(n);
+		Iterator<Integer> i = adj[s].listIterator(); // It is a java iterator that is used to traverse all types of lists including 
+		                                             // arraylists , linkedlists , queues, stacks etc
+			                                     // listIterator extends the iterator interface of the collections framework
+			                                     // Its cursor always lies between the previous and next elements
+			                                     // the previous() will return to the previous elements and the next() will return to the next element                                   
+		while (i.hasNext()){ //while this linkedlist has a chain of elements/ adjacent vertices i  to the head vertex s,
+			             // iterate over them using the listIterator
+		int n = i.next(); // store next adjacent vertex i in a variable n 
+		if (!visited[n]){  // check if this vertex is visited or not. If not visited 
+		visited[n] = true;  // mark it as visited 
+		queue.add(n);       // add it to the queue , repeat this process until all the adjacent vertices of s are added to the queue
 		}
 		}
+			
 		}
 		}
 
