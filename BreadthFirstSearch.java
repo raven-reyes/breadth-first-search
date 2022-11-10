@@ -23,7 +23,7 @@ public class BreadthFirstSearch {
 //and E is the number of edges incident to a given vertex v(we are checking or looping over all the edges of every vertex)	
 // the auxilliary space is O(V) because of the extra space of visited array we have created of size V 
 // the space the algorithm needs to run is O(V) because at worst case we are holding V vertices in the queue
-// therefore , the total space complexity for this algorithm is O(V) + O(V) for auxilliary space hence O(V + V);
+// therefore , the space complexity for this algorithm to run is O(V) + O(V) for auxilliary space hence O(V + V);
 // print BFS traversal from a given source s 
 		public void BFS(int s){
 // A boolean visited array is used  to mark the visited vertices.Iniatially mark all the vertices 
