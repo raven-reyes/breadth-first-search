@@ -1,9 +1,6 @@
 import java.util.Iterator;
 import java.util.LinkedList;
 //Java program to print BFS traversal from a given source vertex.
-// The time complexity for this algorithm is O(V+E) where V is the number of Nodes
-// and E is the number of edges
-// The space complexity is O(V) because we are creating a linkedlist for every vertex
 public class BreadthFirstSearch {
 		int V; // No. of vertices
 	   LinkedList<Integer> adj[]; //Adjacency List using linkedlist
@@ -24,6 +21,10 @@ public class BreadthFirstSearch {
 		}
 
 // print BFS traversal from a given source s 
+// The time complexity for this algorithm is O(V+E) where V is the number of Nodes and E is the number of edges
+// the auxilliary space is O(V) because of the visited array we have created of size V 
+// the space the algorithm needs to run is O(V) because we are pushing V vertices in the call stack
+// Hence , the total space space complexity for this algorithm is O(V)
 		public void BFS(int s){
 // A boolean visited array is used  to mark the visited vertices.Iniatially mark all the vertices 
 //as unvisited. set default to false
