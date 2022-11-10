@@ -19,12 +19,12 @@ public class BreadthFirstSearch {
 			adj[i].add(j); //adding edges from vertex i to vertex j
 			adj[j].add(i); //adding edges from vertex j to vertex i
 		}
-
+// The time complexity for this algorithm is O(V+E) where V is the number of Nodes we will visit during execution of this algorithm
+//and E is the number of edges incident to a given vertex v(we are checking or looping over all the edges of every vertex)	
+// the auxilliary space is O(V) because of the extra space of visited array we have created of size V 
+// the space the algorithm needs to run is O(V) because at worst case we are holding V vertices in the queue
+// therefore , the total space complexity for this algorithm is O(V) + O(V) for auxilliary space hence O(V + V);
 // print BFS traversal from a given source s 
-// The time complexity for this algorithm is O(V+E) where V is the number of Nodes and E is the number of edges
-// the auxilliary space is O(V) because of the visited array we have created of size V 
-// the space the algorithm needs to run is O(V) because we are pushing V vertices in the call stack
-// Hence , the total space space complexity for this algorithm is O(V)
 		public void BFS(int s){
 // A boolean visited array is used  to mark the visited vertices.Iniatially mark all the vertices 
 //as unvisited. set default to false
